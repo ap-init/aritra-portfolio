@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AP — CSE (AI/ML) student, aspiring software engineer and web developer.">
+  <title>AP | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-wrap">
+      <a class="brand" href="#home">Portfolio</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
+      <nav id="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">☼</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+      <div class="container hero-inner">
+        <p class="eyebrow">CSE (AI/ML) STUDENT</p>
+        <h1>Hi, I'm <span>AP</span></h1>
+        <h2>Aspiring Software Engineer <b>|</b> Web Developer <b>|</b> AI/ML Enthusiast</h2>
+        <p class="hero-copy">Building practical software and intelligent solutions that turn ideas into useful real-world products.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="assets/resume.pdf" download>Download Resume</a>
+        </div>
+        <div class="socials">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+          <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">⌘</a>
+        </div>
+        <a class="scroll-down" href="#about" aria-label="Scroll to About">⌄</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>About <span>Me</span></h2>
+          <p>A little about my background, interests and what I'm looking for.</p>
+        </div>
+        <div class="about-grid">
+          <div class="profile-card">
+            <div class="avatar">AP</div>
+            <h3>AP</h3>
+            <p>CSE • Artificial Intelligence & Machine Learning</p>
+            <div class="mini-stats">
+              <div><strong>AI/ML</strong><span>Focus</span></div>
+              <div><strong>Web</strong><span>Development</span></div>
+              <div><strong>DSA</strong><span>Learning</span></div>
+            </div>
+          </div>
+          <div class="about-copy">
+            <p>I'm a Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning. I enjoy building web applications, experimenting with machine learning, and strengthening my problem-solving skills through coding.</p>
+            <p>My current goal is to grow as a software engineer by working on meaningful projects, internships, hackathons and collaborative development.</p>
+            <div class="info-card">
+              <h3>Key Interests</h3>
+              <div class="tags">
+                <span>Machine Learning</span><span>Deep Learning</span><span>Web Development</span>
+                <span>NLP</span><span>Computer Vision</span><span>DSA</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <h3>Availability</h3>
+              <p>Open to internships, project collaborations, hackathons and networking opportunities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Technical <span>Skills</span></h2>
+          <p>A practical toolkit developed through coursework, projects and continuous learning.</p>
+        </div>
+        <div class="skill-grid">
+          <article class="card skill-card"><div class="icon">‹/›</div><div><h3>Programming</h3><div class="tags"><span>Python</span><span>Java</span><span>C</span><span>JavaScript</span><span>SQL</span></div></div></article>
+          <article class="card skill-card"><div class="icon">◎</div><div><h3>Web Development</h3><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive UI</span></div></div></article>
+          <article class="card skill-card"><div class="icon">✦</div><div><h3>AI & Machine Learning</h3><div class="tags"><span>Machine Learning</span><span>Deep Learning</span><span>NLP</span><span>Computer Vision</span><span>scikit-learn</span><span>PyTorch</span></div></div></article>
+          <article class="card skill-card"><div class="icon">⚒</div><div><h3>Tools</h3><div class="tags"><span>Git</span><span>GitHub</span><span>VS Code</span><span>Jupyter</span><span>Docker</span></div></div></article>
+          <article class="card skill-card"><div class="icon">▤</div><div><h3>Core CS</h3><div class="tags"><span>Data Structures</span><span>Algorithms</span><span>DBMS</span><span>OOP</span><span>Computer Networks</span><span>Operating Systems</span></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Featured <span>Projects</span></h2>
+          <p>Selected projects and experiments across AI/ML and web development.</p>
+        </div>
+        <div class="filter" role="tablist">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="ai">AI/ML</button>
+          <button class="filter-btn" data-filter="web">Web Dev</button>
+        </div>
+        <div class="project-grid">
+          <article class="project-card" data-category="web">
+            <div class="project-visual">☁</div>
+            <div class="project-body"><span class="badge">WEB DEV</span><h3>Weather Forecast App</h3><p>A responsive weather application that presents current conditions and forecast information through a clean, user-friendly interface.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span></div><div class="project-actions"><a href="#" class="code-link">Code ↗</a><a href="#" class="btn small primary">Live Demo ↗</a></div></div>
+          </article>
+          <article class="project-card" data-category="ai">
+            <div class="project-visual">✦</div>
+            <div class="project-body"><span class="badge">AI/ML</span><h3>AI Chatbox</h3><p>An AI-powered conversational project focused on natural-language interaction and a simple chat experience.</p><div class="tags"><span>Python</span><span>NLP</span><span>AI</span><span>Web</span></div><div class="project-actions"><a href="#" class="code-link">Code ↗</a><a href="#" class="btn small primary">Live Demo ↗</a></div></div>
+          </article>
+          <article class="project-card" data-category="ai">
+            <div class="project-visual">♫</div>
+            <div class="project-body"><span class="badge">AI/ML</span><h3>Music Recommendation System</h3><p>A recommendation-system concept using user preferences, mood and activity to suggest relevant music.</p><div class="tags"><span>Python</span><span>ML</span><span>NLP</span><span>APIs</span></div><div class="project-actions"><a href="#" class="code-link">Code ↗</a><a href="#" class="btn small primary">Details ↗</a></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="section alt">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Achievements & <span>Recognition</span></h2>
+          <p>Programs, competitions and learning milestones.</p>
+        </div>
+        <div class="achievement-grid">
+          <article class="card achievement"><div class="icon">◆</div><div><h3>IBM SkillsBuild Project Based Learning</h3><p>Completed the “Decoding Data: Insights and Impact through Analytics” program with CSRBOX & IBM SkillsBuild.</p></div></article>
+          <article class="card achievement"><div class="icon">◈</div><div><h3>ServiceNow Virtual Internship</h3><p>Completed learning modules covering ServiceNow administration fundamentals, flows, ATF, reports and AI concepts.</p></div></article>
+          <article class="card achievement"><div class="icon">★</div><div><h3>Google Cloud Gen AI Academy</h3><p>Participating in Google Cloud's Gen AI learning ecosystem and building knowledge around generative AI.</p></div></article>
+          <article class="card achievement"><div class="icon">⚑</div><div><h3>Hackathon & Competitive Coding</h3><p>Actively preparing for coding competitions and hackathons focused on software, AI and real-world problem solving.</p></div></article>
+        </div>
+        <div class="opportunity">
+          <div class="opportunity-icon">♜</div>
+          <h3>Open to Internship Opportunities</h3>
+          <p>Interested in AI/ML, Software Development and Web Development internships, collaborations and project opportunities.</p>
+          <div class="tags center"><span>AI/ML</span><span>Software Development</span><span>Web Development</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Let's <span>Connect</span></h2>
+          <p>Let's build something impactful together.</p>
+        </div>
+        <div class="contact-grid">
+          <form class="contact-form card" id="contactForm">
+            <label>Name<input id="name" type="text" placeholder="Your name" required></label>
+            <label>Email<input id="email" type="email" placeholder="your.email@example.com" required></label>
+            <label>Message<textarea id="message" rows="6" placeholder="Tell me about your project or opportunity..." required></textarea></label>
+            <button class="btn primary" type="submit">➤ &nbsp; Send Message</button>
+            <small id="formStatus"></small>
+          </form>
+          <div class="contact-side">
+            <div class="card connect-card">
+              <h3>Connect With Me</h3>
+              <a href="mailto:your.email@example.com" class="contact-item"><span class="icon">✉</span><span><b>Email</b><small>your.email@example.com</small></span></a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" class="contact-item"><span class="icon">in</span><span><b>LinkedIn</b><small>linkedin.com/in/your-profile</small></span></a>
+              <a href="https://github.com/" target="_blank" rel="noreferrer" class="contact-item"><span class="icon">⌘</span><span><b>GitHub</b><small>github.com/your-username</small></span></a>
+              <a href="https://x.com/" target="_blank" rel="noreferrer" class="contact-item"><span class="icon">𝕏</span><span><b>Twitter / X</b><small>@your-handle</small></span></a>
+            </div>
+            <div class="card quick"><h3>Quick Response</h3><p>I usually respond as soon as possible. For opportunities, feel free to connect on LinkedIn or send an email directly.</p><div class="quick-links"><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">in LinkedIn</a><a href="mailto:your.email@example.com">✉ Email</a></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container"><span>© <span id="year"></span> AP. Built with HTML, CSS & JavaScript.</span><a href="#home">Back to top ↑</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
